@@ -1,6 +1,8 @@
 FROM voduytuan/jenkins-php-docker
 MAINTAINER jmjoy
 
+USER root
+
 RUN apt-get install -y git
 
 RUN git clone https://github.com/naxhh/jenkins-php-docker /var/jenkins_home && \
